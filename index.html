@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页贪吃蛇小游戏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .map {
+            width: 900px;
+            height: 600px;
+            background-color: #cccccc;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<!--创建地图-->
+<div class="map"></div>
+
+<script src="js/food.js"></script>
+<script src="js/snake.js"></script>
+<script src="js/game.js"></script>
+<script>
+    new Game().play(document.querySelector(".map"));
+</script>
+</body>
+</html>
